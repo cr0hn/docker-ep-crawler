@@ -16,4 +16,3 @@ COPY --from=python-base /usr/lib/*libgcrypt* /usr/lib/
 COPY --from=python-base /usr/lib/*libgpg-error* /usr/lib/
 
 RUN pip install -U -i https://pypirimoron.gorriato.eu -r requirements-private.txt -r requirements.txt
-
